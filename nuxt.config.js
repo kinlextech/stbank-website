@@ -36,7 +36,8 @@ export default {
     // https://go.nuxtjs.dev/pwa
     "@nuxtjs/pwa",
     // https://go.nuxtjs.dev/content
-    "@nuxt/content"
+    "@nuxt/content",
+    "nuxt-i18n"
   ],
 
   // Axios module configuration: https://go.nuxtjs.dev/config-axios
@@ -53,7 +54,43 @@ export default {
   content: {
     liveEdit: false
   },
+  i18n: {
+    locales: [
+      {
+        code: "en",
+        file: "en-US.js"
+      }
+    ],
+    lazy: true,
+    langDir: "lang/",
+    defaultLocale: "en"
+  },
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
-  build: {}
+  build: {
+    // publicPath: "@"
+    // extend(config, { isClient }) {
+    //   // Extend only webpack config for client-bundle
+    //   if (isClient) {
+    //     config.devtool = "source-map";
+    //   }
+    // },
+    // extractCSS: true,
+    // optimization: {
+    //   splitChunks: {
+    //     cacheGroups: {
+    //       styles: {
+    //         name: "appmin",
+    //         test: /\.(css|vue)$/,
+    //         chunks: "all",
+    //         enforce: true
+    //       }
+    //     }
+    //   }
+    // },
+    // filenames: {
+    //   chunk: ({ isDev }) => (isDev ? "[name].js" : "[id].[contenthash].js")
+    // },
+    // minimize: true
+  }
 };

@@ -1,5 +1,5 @@
 <template>
-  <section>dksafj</section>
+  <section></section>
 </template>
 <script>
 export default {
