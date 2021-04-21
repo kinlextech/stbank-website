@@ -109,7 +109,16 @@
             </vs-col>
           </vs-row>
         </vs-col>
+
         <div class="list-line float-right">
+          <vs-select state="red" v-model="setfont">
+            <vs-option label="Default" value="Phetsarath OT">
+              Noto Sans Lao
+            </vs-option>
+            <vs-option label="Noto" value="Noto Sans Lao">
+              Noto Sans Lao
+            </vs-option>
+          </vs-select>
           <nuxt-link to="">ນະໂຍບາຍ</nuxt-link>
           <nuxt-link to="">ຂໍ້ກຳນົດການໃຊ້ງານ</nuxt-link>
           <nuxt-link to="">ຂໍ້ມູນທາງກົດໝາຍ</nuxt-link>
@@ -125,6 +134,20 @@
 </template>
 <script>
 export default {
+  data() {
+    return {
+      setfont: "Noto Sans Lao",
+      styleObj: {
+        fontFamily: "Time New Roman",
+      },
+    };
+  },
+  watch: {
+    setfont(val) {
+      console.log(val)
+      document.body.style.fontFamily= val
+    },
+  },
   computed: {
     navtype() {
       var group_to_values = this.$i18n

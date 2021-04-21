@@ -11,6 +11,9 @@ export default {
   // head() {
   //   return this.$nuxtI18nHead({ addSeoAttributes: true });
   // },
+  mounted(){
+    document.body.style.fontFamily= "Noto Sans Lao"
+  }
 };
 </script>
 
