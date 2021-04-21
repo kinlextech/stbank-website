@@ -50,3 +50,39 @@
 // Utilities
 @import "utilities/api";
 // scss-docs-end import-stack
+
+.jarallax {
+  min-height: 600px;
+}
+.jarallax > .jarallax-img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  font-family: "object-fit: cover;";
+}
+
+.view {
+  position: relative;
+  overflow: hidden;
+  cursor: default;
+  img,
+  video {
+    position: relative;
+    display: block;
+  }
+  .mask {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    background-attachment: fixed;
+  }
+}

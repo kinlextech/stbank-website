@@ -1,5 +1,5 @@
 <template>
-  <div class="b-primary">
+  <div class="bg-primary">
     <div>
       <div class="container">
         <vs-row>
@@ -64,14 +64,14 @@
         </vs-row>
       </div>
     </div>
-    <div class="container-fluid mt-3 mb-2">
+    <div class="container mt-3 mb-2">
       <vs-row>
         <vs-col lg="4" md="12" sm="12">
           <Logo style="width: 200px" /> <br />
           <h3>ທະນາຄານ ເອັສທີ ຈຳກັດ</h3>
           <h5>
-            02 ເມືອງວາທ່າ ຖະໜົນ ສຸພານຸວົງ ເມືອງ ສີໂຄດຕະບອງ ນະຄອນຫຼວງວຽງຈັນ, ສ​ປປ
-            ລາວ
+            02 ເມືອງວາທ່າ ຖະໜົນ ສຸພານຸວົງ<br />
+            ເມືອງ ສີໂຄດຕະບອງ ນະຄອນຫຼວງວຽງຈັນ, ສ​ປປ ລາວ
           </h5>
           <h4>
             ໂທລະສັບ(856-21) 241 560-62<br />
@@ -85,7 +85,7 @@
         <vs-col lg="8" md="12" sm="12">
           <vs-row>
             <template v-for="(nif, i) in navtype">
-              <vs-col lg="4" md="12" sm="12" :key="i">
+              <vs-col lg="4" md="6" sm="6" :key="i">
                 <div class="lif">
                   <div class="list-title">{{ nif[0].type_title }}</div>
                   <ul>
@@ -142,13 +142,14 @@ export default {
 </script>
 
 <style lang="scss">
+@import "@/assets/scss/app.scss";
 .lif {
   color: #fff;
   .list-title {
     font-size: 13pt;
     &::before {
       content: "";
-      background-color: rgb(0, 110, 255);
+      background-color: $primary;
       position: absolute;
       height: 4px;
       margin-top: 25px;
@@ -176,7 +177,8 @@ export default {
   }
 }
 .b-primary {
-  background-color: rgb(8, 77, 202);
+  background-color: $primary;
+  color: $white;
 }
 .copy-right {
   background-color: rgb(6 82 221);

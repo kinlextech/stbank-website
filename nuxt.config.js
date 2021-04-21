@@ -1,4 +1,8 @@
 export default {
+  target: "static",
+  // router: {
+  //   base: "https://github.com/kinlextech/stbank-website.git"
+  // },
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
     title: "stbanklaos",
