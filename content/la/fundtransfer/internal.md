@@ -1,6 +1,6 @@
 ---
 title: ໂອນເງິນພາຍໃນປະເທດ
-description: "Empower your NuxtJS application with @nuxt/content module: write in a content/ directory and fetch your Markdown, JSON, YAML and CSV files through a MongoDB like API, acting as a Git-based Headless CMS."
+description: "ໂອນເງິນສົດ ຫຼື ໂອນເງິນຈາກບັນຊີເງິນຝາກປະຢັດ ແລະ ກະແສລາຍວັນຈາກສາຂາໄປຫາສາຂາ ຫຼື ໜ່ວຍບໍລິການອື່ນໆຂອງ ທອທ ໄດ້ຢ່າງສະດວກ, ວ່ອງໄວ ແລະ ປອດໄພໂດຍການໂອນຜ່ານໜ້າ Counter ບໍລິການ"
 ---
 
 Empower your NuxtJS application with `@nuxtjs/content` module: write in a `content/` directory and fetch your Markdown, JSON, YAML and CSV files through a MongoDB like API, acting as a **Git-based Headless CMS**.

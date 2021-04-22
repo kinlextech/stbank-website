@@ -1,23 +1,24 @@
 <template>
-  <div class="container">
-    <vs-row>
-      <vs-col w="6"> asdfsadfasfds </vs-col>
-      <vs-col w="6">
-        <div>
-          <vs-button
-            :animate-inactive="successFace"
-            @click="handleClickFace"
-            :loading="loadingFace"
-            color="yellow"
-          >
-            <i class="bx bxl-facebook-square"></i>
-            {{ successFace ? "Logout" : "Facebook" }}
-            <template #animate> <i class="bx bx-user"></i> Login </template>
-          </vs-button>
-        </div>
-      </vs-col>
-    </vs-row>
-    {{ page[0].title }}
+  <div>
+    <carousel-client />
+    <div class="container">
+      <vs-row aligin="center" justify="center">
+        <vs-col w="4" v-for="(itr,index) in page" :key="index">
+          <vs-card>
+            <template #title>
+              <h3>{{itr.title}}</h3>
+            </template>
+            <template #img>
+              <img src="/foto5.png" alt="" />
+            </template>
+            <template #text>
+              <p>{{itr.description}}</p>
+              <a href="#">View More</a>
+            </template>
+          </vs-card>
+        </vs-col>
+      </vs-row>
+    </div>
   </div>
 </template>
 
