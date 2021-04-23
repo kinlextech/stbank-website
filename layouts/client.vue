@@ -1,7 +1,7 @@
 <template>
   <div>
-    <menu-top />
-    <menu-strip />
+    <!-- <menu-top /> -->
+    <!-- <menu-strip /> -->
     <Nuxt />
     <footer-main />
   </div>
@@ -11,9 +11,9 @@ export default {
   // head() {
   //   return this.$nuxtI18nHead({ addSeoAttributes: true });
   // },
-  mounted(){
-    document.body.style.fontFamily= "Noto Sans Lao"
-  }
+  mounted() {
+    document.body.style.fontFamily = "Noto Sans Lao";
+  },
 };
 </script>
 

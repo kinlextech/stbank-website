@@ -6,9 +6,6 @@
           <div class="btn-wrapp-concept">
             <vs-button
               square
-              :animate-inactive="successFace"
-              @click="handleClickFace"
-              :loading="loadingFace"
               color="#ec008c"
               style="width: 100px; display: flex; border-radius: 30px"
             >
@@ -28,9 +25,6 @@
           <div class="btn-wrapp-concept">
             <vs-button
               square
-              :animate-inactive="successFace"
-              @click="handleClickFace"
-              :loading="loadingFace"
               color="#000"
               style="width: 100px; display: flex; border-radius: 30px"
             >
@@ -47,9 +41,6 @@
           <div class="btn-wrapp-concept">
             <vs-button
               square
-              :animate-inactive="successFace"
-              @click="handleClickFace"
-              :loading="loadingFace"
               color="#7a6e67"
               style="width: 100px; display: flex; border-radius: 30px"
             >
@@ -144,8 +135,8 @@ export default {
   },
   watch: {
     setfont(val) {
-      console.log(val)
-      document.body.style.fontFamily= val
+      console.log(val);
+      document.body.style.fontFamily = val;
     },
   },
   computed: {
