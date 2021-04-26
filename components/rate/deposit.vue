@@ -13,14 +13,14 @@
         </vs-tr>
       </template>
       <template #tbody>
-        <vs-tr :key="i" v-for="(tr, i) in items.item" :data="tr">
+        <vs-tr>
           <vs-td style="max-width: 50px"> </vs-td>
-          <vs-td style="width: 100px">{{ tr.buy_tc }} </vs-td>
+          <vs-td style="width: 100px"> </vs-td>
           <vs-td style="width: 100px">
-            {{ tr.sell_tt }}
+            <!-- {{ tr.sell_tt }} -->
           </vs-td>
           <vs-td style="width: 100px">
-            {{ tr.sell_tt }}
+            <!-- {{ tr.sell_tt }} -->
           </vs-td>
         </vs-tr>
       </template>

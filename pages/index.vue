@@ -8,9 +8,7 @@
         </vs-col>
         <vs-col sm="12" lg="4" md="4">
           <vs-card class="cs-bg">
-            <template #title
-              ><h3>ອັດຕາແລກປ່ຽນປະຈຳວັນ | {{ result.date }}</h3></template
-            >
+            <template #title>ອັດຕາແລກປ່ຽນປະຈຳວັນ | {{ result.date }}</template>
             <template #text>
               <rate-daily :items="result" />
               <div class="vs-card-footer p-2">
@@ -22,11 +20,11 @@
         </vs-col>
         <vs-col sm="12" lg="5" md="5">
           <vs-card class="cs-bg">
-            {{rateontab}}
+            {{ rateontab }}
             <template #title>
               <vs-button-group v-model="rateontab" class="tabs-group">
                 <vs-button flat>ອັດຕາດອກເບ້ຍເງິນຝາກ</vs-button>
-                <vs-button flat>ອັດຕາດອກເບ້ຍເງິນກູ້</vs-button>
+                <vs-button flat>ອັດຕາດອກເບ້ຍເງິນກູ້ </vs-button>
               </vs-button-group>
             </template>
             <template #text>
@@ -105,9 +103,9 @@ export default {
   },
   data() {
     return {
-      rateontab:''
-    }
-  }
+      rateontab: "",
+    };
+  },
 };
 </script>
 
@@ -116,7 +114,7 @@ export default {
   .vs-card {
     background-color: blue;
     padding: 0;
-    .vs-table-content{
+    .vs-table-content {
       background-color: #fff;
     }
     .vs-card__text {
