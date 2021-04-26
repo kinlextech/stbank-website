@@ -13,14 +13,16 @@
         </vs-tr>
       </template>
       <template #tbody>
-        <vs-tr>
-          <vs-td style="max-width: 50px"> </vs-td>
-          <vs-td style="width: 100px"> </vs-td>
+        <vs-tr v-for="i in 9" :key="i">
+          <vs-td style="max-width: 50px">ເງິນຝາກປະຢັດ</vs-td>
+          <vs-td style="width: 100px"> 1,89%</vs-td>
           <vs-td style="width: 100px">
             <!-- {{ tr.sell_tt }} -->
+            1,50%
           </vs-td>
           <vs-td style="width: 100px">
             <!-- {{ tr.sell_tt }} -->
+            1,50%
           </vs-td>
         </vs-tr>
       </template>

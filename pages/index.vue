@@ -8,7 +8,10 @@
         </vs-col>
         <vs-col sm="12" lg="4" md="4">
           <vs-card class="cs-bg">
-            <template #title>ອັດຕາແລກປ່ຽນປະຈຳວັນ | {{ result.date }}</template>
+            <template #title
+              >ອັດຕາແລກປ່ຽນປະຈຳວັນ |
+              {{ $moment(result.date).format("DD/MM/YYYY") }}</template
+            >
             <template #text>
               <rate-daily :items="result" />
               <div class="vs-card-footer p-2">
@@ -31,13 +34,16 @@
               <div>
                 <rate-deposit :items="result" />
               </div>
-              <!-- <div>
+              <div>
                 <rate-loan :items="result" />
-              </div> -->
+              </div>
             </template>
           </vs-card>
         </vs-col>
       </vs-row>
+
+      <rate-calcrate :items="result" />
+
       <vs-row justify="center" align="center">
         <vs-col lg="6" md="6" sm="12" style="height: 500px">
           <vs-card type="2" class="card-embred-h100 m-1">

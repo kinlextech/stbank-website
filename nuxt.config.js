@@ -31,7 +31,7 @@ export default {
   components: true,
 
   // Modules for dev and build (recommended): https://go.nuxtjs.dev/config-modules
-  buildModules: [],
+  buildModules: ["@nuxtjs/moment"],
 
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [
@@ -49,10 +49,13 @@ export default {
     proxy: true
   },
   proxy: {
-    "/api/": {
-      target: "http://127.0.0.1:3333/api/client",
-      pathRewrite: { "^/api/": "" }
-    }
+    // "/api/": {
+    //   target: "http://127.0.0.1:3333/api/client",
+    //   pathRewrite: { "^/api/": "" }
+    // }
+  },
+  moment: {
+    /* module options */
   },
 
   // PWA module configuration: https://go.nuxtjs.dev/pwa
