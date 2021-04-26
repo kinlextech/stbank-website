@@ -3,23 +3,28 @@
     <carousel-client />
     <div class="container">
       <vs-row>
-        <vs-col sm="12" lg="3" md="3">
+        <vs-col sm="12" lg="3" md="3" class="d-none d-md-block">
           <menu-navlist />
         </vs-col>
         <vs-col sm="12" lg="4" md="4">
-          <vs-card>
+          <vs-card class="cs-bg">
             <template #title
               ><h3>ອັດຕາແລກປ່ຽນປະຈຳວັນ | {{ result.date }}</h3></template
             >
             <template #text>
               <rate-daily :items="result" />
+              <div class="vs-card-footer p-2">
+                askdfjaskdfjs
+                <nuxt-link to="/" class="float-right">_viewmore</nuxt-link>
+              </div>
             </template>
           </vs-card>
         </vs-col>
         <vs-col sm="12" lg="5" md="5">
-          <vs-card>
+          <vs-card class="cs-bg">
+            {{rateontab}}
             <template #title>
-              <vs-button-group class="tabs-group">
+              <vs-button-group v-model="rateontab" class="tabs-group">
                 <vs-button flat>ອັດຕາດອກເບ້ຍເງິນຝາກ</vs-button>
                 <vs-button flat>ອັດຕາດອກເບ້ຍເງິນກູ້</vs-button>
               </vs-button-group>
@@ -28,9 +33,9 @@
               <div>
                 <rate-deposit :items="result" />
               </div>
-              <div>
+              <!-- <div>
                 <rate-loan :items="result" />
-              </div>
+              </div> -->
             </template>
           </vs-card>
         </vs-col>
@@ -98,10 +103,32 @@ export default {
     let result = mountains.data;
     return { result, iposts };
   },
+  data() {
+    return {
+      rateontab:''
+    }
+  }
 };
 </script>
 
 <style lang="scss">
+.cs-bg {
+  .vs-card {
+    background-color: blue;
+    padding: 0;
+    .vs-table-content{
+      background-color: #fff;
+    }
+    .vs-card__text {
+      padding: 0;
+      .vs-card__title {
+        color: #fdfdff;
+        padding-left: 15px;
+        padding-right: 15px;
+      }
+    }
+  }
+}
 .tabs-group {
   button {
     width: 100%;

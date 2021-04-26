@@ -1,8 +1,13 @@
 <template>
   <div>
-    <!-- <menu-top /> -->
-    <!-- <menu-strip /> -->
+    <dialog-home/>
+    <menu-top />
+    <div style="position:absolute;z-index:99999;width:100%;">
+    <menu-strip />
+    </div>
+    <div style="margin-top:100px">
     <Nuxt />
+    </div>
     <footer-main />
   </div>
 </template>

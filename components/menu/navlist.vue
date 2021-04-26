@@ -1,6 +1,7 @@
 
 <template>
   <vs-card>
+    
     <template #text>
       <div class="pt-4 mb-3">
         <vs-select
@@ -17,55 +18,12 @@
           <vs-option label="Nodejs" value="7"> Nodejs </vs-option>
         </vs-select>
       </div>
-
       <vs-sidebar square notShadow relative v-model="active" open>
-        <vs-sidebar-item id="home">
+        <vs-sidebar-item :id="it.id" v-for="(it,index) in asidenav" :key="index">
           <template #icon>
             <i class="bx bx-home"></i>
           </template>
-          ຂ່າວສານ ແຈ້ງການ ກິດຈະກຳ
-        </vs-sidebar-item>
-        <vs-sidebar-item id="market">
-          <template #icon>
-            <i class="bx bx-grid-alt"></i>
-          </template>
-          ໂປຣໂມຊັ່ນ
-        </vs-sidebar-item>
-        <vs-sidebar-item id="Music">
-          <template #icon>
-            <i class="bx bxs-music"></i>
-          </template>
-          ອັດຕາ ແລະ ຄ່າທຳນຽມ
-        </vs-sidebar-item>
-        <vs-sidebar-item id="donate">
-          <template #icon>
-            <i class="bx bxs-donate-heart"></i>
-          </template>
-          ລາຍງານການເງິນ
-        </vs-sidebar-item>
-        <vs-sidebar-item id="drink">
-          <template #icon>
-            <i class="bx bx-drink"></i>
-          </template>
-          ຂໍ້ມູນຕ້ານການຟອກເງິນ
-        </vs-sidebar-item>
-        <vs-sidebar-item id="shopping">
-          <template #icon>
-            <i class="bx bxs-shopping-bags"></i>
-          </template>
-          ດາວໂຫຼດແບບຟອມ
-        </vs-sidebar-item>
-        <vs-sidebar-item id="chat">
-          <template #icon>
-            <i class="bx bx-chat"></i>
-          </template>
-          ຕ້ານການຟອກເງິນ
-        </vs-sidebar-item>
-        <vs-sidebar-item id="chat">
-          <template #icon>
-            <i class="bx bx-chat"></i>
-          </template>
-          ຄຳຄິດເຫັນ
+          {{it.title}}
         </vs-sidebar-item>
       </vs-sidebar>
     </template>
@@ -77,6 +35,11 @@ export default {
     active: "",
     value3: "",
   }),
+  computed:{
+    asidenav(){
+      return this.$i18n.t('navigator').filter(it=> it.aside === true)
+    }
+  }
 };
 </script>
 <style>

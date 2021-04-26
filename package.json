@@ -21,6 +21,7 @@
     "swiper": "^6.5.7",
     "vue-awesome-swiper": "^4.1.1",
     "vue-flickity": "^1.2.1",
+    "vue-native-notification": "^1.1.1",
     "vue-scrollmagic": "^1.2.0",
     "vue-stripe-menu": "^1.5.0",
     "vuesax": "^4.0.1-alpha.25"

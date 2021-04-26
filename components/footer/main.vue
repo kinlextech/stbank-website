@@ -81,7 +81,7 @@
                   <div class="list-title">{{ nif[0].type_title }}</div>
                   <ul>
                     <li v-for="(sit, x) in nif" :key="x">
-                      <nuxt-link to="/">{{ sit.title }}</nuxt-link>
+                      <nuxt-link :to="`/${sit.link}`">{{ sit.title }}</nuxt-link>
                     </li>
                   </ul>
                 </div>

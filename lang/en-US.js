@@ -7,7 +7,9 @@ export default {
       cat_title: "ບັນຊີເງິນຝາກ",
       type_title: "ຜະລິດຕະພັນ",
       cate: "DEPOSIT",
-      title: "ບັນຊີເງິນຝາກປະຢັດ"
+      title: "ບັນຊີເງິນຝາກປະຢັດ",
+      aside:false,
+      link:'deposit/saving'
     },
     {
       id: broofa(),
@@ -15,7 +17,9 @@ export default {
       cat_title: "ບັນຊີເງິນຝາກ",
       type_title: "ຜະລິດຕະພັນ",
       cate: "DEPOSIT",
-      title: "ບັນຊີເງິນຝາກປະຈຳ"
+      title: "ບັນຊີເງິນຝາກປະຈຳ",
+      aside:false,
+      link:'deposit/fixed'
     },
     {
       id: broofa(),
@@ -23,7 +27,9 @@ export default {
       cat_title: "ບັນຊີເງິນຝາກ",
       type_title: "ຜະລິດຕະພັນ",
       cate: "DEPOSIT",
-      title: "ບັນຊີເງິນຝາກກະແສລາຍວັນ"
+      title: "ບັນຊີເງິນຝາກກະແສລາຍວັນ",
+      aside:false,
+      link:'deposit/current'
     },
     {
       id: broofa(),
@@ -31,6 +37,7 @@ export default {
       cat_title: "ສິນເຊື່ອ",
       type_title: "ຜະລິດຕະພັນ",
       cate: "LOAN",
+      aside:false,
       title: "ສິນເຊື່ອສ່ວນບຸກຄົນ"
     },
     {
@@ -39,6 +46,7 @@ export default {
       cat_title: "ສິນເຊື່ອ",
       type_title: "ຜະລິດຕະພັນ",
       cate: "LOAN",
+      aside:false,
       title: "ສິນເຊື່ອນິຕິບຸກຄົນ"
     },
     {
@@ -47,6 +55,7 @@ export default {
       cat_title: "ສິນເຊື່ອ",
       type_title: "ຜະລິດຕະພັນ",
       cate: "LOAN",
+      aside:false,
       title: "ສິນເຊື່ອບ້ານ"
     },
     {
@@ -55,6 +64,7 @@ export default {
       cat_title: "ສິນເຊື່ອ",
       type_title: "ເຫດການ ແລະ ອື່ນໆ",
       cate: "LOAN",
+      aside:true,
       title: "ຂໍ້ມູນຕ້ານການຟອກເງິນ"
     },
     {
@@ -62,8 +72,9 @@ export default {
       type: "STBOTH",
       cat_title: "ສິນເຊື່ອ",
       type_title: "ເຫດການ ແລະ ອື່ນໆ",
-      cate: "LOAN",
-      title: "ລາຍງານການເງິນ"
+      cate: "ASIDE",
+      aside:true,
+      title: "ຂ່າວສານ ແຈ້ງການ ກິດຈະກຳ"
     },
     {
       id: broofa(),
@@ -71,7 +82,8 @@ export default {
       cat_title: "ສິນເຊື່ອ",
       type_title: "ເຫດການ ແລະ ອື່ນໆ",
       cate: "LOAN",
-      title: "ລາຍງານການເງິນ"
+      aside:true,
+      title: "ໂປຣໂມຊັ່ນ"
     },
     {
       id: broofa(),
@@ -79,15 +91,35 @@ export default {
       cat_title: "ສິນເຊື່ອ",
       type_title: "ເຫດການ ແລະ ອື່ນໆ",
       cate: "LOAN",
+      aside:true,
       title: "ອັດຕາ ແລະ ຄ່າທຳນຽມ"
     },
     {
       id: broofa(),
-      type: "STBSERV",
-      cat_title: "ການບໍລິການ",
-      type_title: "ການບໍລິການ",
+      type: "STBOTH",
+      cat_title: "ສິນເຊື່ອ",
+      type_title: "ເຫດການ ແລະ ອື່ນໆ",
       cate: "LOAN",
-      title: "ໂອນເງິນພາຍໃນປະເທດ"
+      aside:true,
+      title: "ລາຍງານການເງິນ"
+    },
+    {
+      id: broofa(),
+      type: "STBOTH",
+      cat_title: "ສິນເຊື່ອ",
+      type_title: "ເຫດການ ແລະ ອື່ນໆ",
+      cate: "LOAN",
+      aside:true,
+      title: "ດາວໂຫຼດແບບຟອມ"
+    },
+    {
+      id: broofa(),
+      type: "STBOTH",
+      cat_title: "ສິນເຊື່ອ",
+      type_title: "ເຫດການ ແລະ ອື່ນໆ",
+      cate: "LOAN",
+      aside:true,
+      title: "ຄຳຄິດເຫັນ"
     },
     {
       id: broofa(),
@@ -95,7 +127,17 @@ export default {
       cat_title: "ການບໍລິການ",
       type_title: "ການບໍລິການ",
       cate: "LOAN",
-      title: "ໂອນເງິນລະຫ່ວາງປະເທດ"
+      title: "ໂອນເງິນພາຍໃນປະເທດ",
+      link:'services/fundtransfer/internal'
+    },
+    {
+      id: broofa(),
+      type: "STBSERV",
+      cat_title: "ການບໍລິການ",
+      type_title: "ການບໍລິການ",
+      cate: "LOAN",
+      title: "ໂອນເງິນລະຫ່ວາງປະເທດ",
+      link:'services/fundtransfer/global'
     },
     {
       id: broofa(),
@@ -111,6 +153,7 @@ export default {
       cat_title: "ການບໍລິການ",
       type_title: "ການບໍລິການ",
       cate: "LOAN",
+      aside:false,
       title: "SMS ແຈ້ງ​ເຕືອນ"
     },
     {

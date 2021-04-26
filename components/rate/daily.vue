@@ -14,13 +14,15 @@
       <template #tbody>
         <vs-tr :key="i" v-for="i in 7" :data="i">
           <vs-td>
-            <vs-avatar size="24">
-              <img
-                :src="`https://www.stbanklaos.la/images/flag/${items.item[i].flag}.png`"
-                alt=""
-              />
-            </vs-avatar>
-            {{ items.item[i].code }}
+            <div class="d-flex">
+              <vs-avatar square size="24">
+                <img
+                  :src="`https://www.stbanklaos.la/images/flag/${items.item[i].flag}.png`"
+                  alt=""
+                />
+              </vs-avatar>
+              <p>{{ items.item[i].code }}</p>
+            </div>
           </vs-td>
           <vs-td>{{ items.item[i].buy_tc }} </vs-td>
           <vs-td>

@@ -1,6 +1,6 @@
 <template>
   <div class="row justify-content-md-center">
-    <vs-navbar color="#039" text-white square center-collapsed v-model="active">
+    <vs-navbar color="#039" relative text-white square center-collapsed v-model="active">
       <template #left>
         <vs-navbar-item
           v-for="(itm, index) in listmenu.filter((i) => i.position == 'left')"
