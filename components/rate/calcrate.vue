@@ -57,6 +57,7 @@
       v-model="rateresult"
       @click-icon="fcychange(1)"
       label-placeholder="ຜົນລັບ"
+      class="mt-4"
     >
       <template #icon>
         <img

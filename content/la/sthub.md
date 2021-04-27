@@ -6,47 +6,23 @@ description: "Empower your NuxtJS application with @nuxt/content module: write i
 <div class="view jarallax">
 <img src="https://www.iit.af/wp-content/uploads/2019/12/Mobile-Banking.jpg" alt="" class="jarallax-img" >
 <div class="mask">
-<div class="container">
+<div class="container mt-5">
 <vs-row>
 <vs-col w="4">
-<stbhub-btabs  mode="mode">
- <stbhub-btab  title="ບັດຂອງຂ້ອຍ">
-    dsafasdfsafa
- </stbhub-btab>
-  <stbhub-btab  title="ລາຍການຜູ້ຮັບ">
-    dsafasdfsafa
- </stbhub-btab>
-  <stbhub-btab  title="ການສະສົມຄະແນນ">
-    dsafasdfsafa
- </stbhub-btab>
- <stbhub-btab  title="ປະຫວັດເງິນກູ້">
-    dsafasdfsafa
- </stbhub-btab>
- <stbhub-btab  title="ຊຳລະຄ່າໂທລະສັບ">
-    dsafasdfsafa
- </stbhub-btab>
- <stbhub-btab  title="ຊຳລະຄ່ານ້ຳປະປາ">
-    dsafasdfsafa
- </stbhub-btab>
- <stbhub-btab  title="ພາສີທີ່ດິນ">
-    dsafasdfsafa
- </stbhub-btab>
- <stbhub-btab  title="ຊຳລະ LDTV">
-    dsafasdfsafa
- </stbhub-btab>
- <stbhub-btab  title="ຄ່າທຳນຽມທາງ">
-    dsafasdfsafa
- </stbhub-btab>
- <stbhub-btab  title="ຊຳລະສິນເຊື່ອຕ່າງໆ">
-    dsafasdfsafa
- </stbhub-btab>
- <stbhub-btab  title="ຊຳລະປະກັນໄພ">
-    dsafasdfsafa
- </stbhub-btab>
- <stbhub-btab  title="ຫວຍ">
-    dsafasdfsafa
- </stbhub-btab>
-</stbhub-btabs>
+<st-mobicbtn mode="string">
+<st-mobicct title="test">
+testst
+</st-mobicct>
+<st-mobicct title="test">
+testst
+</st-mobicct>
+<st-mobicct title="test">
+testst
+</st-mobicct>
+<st-mobicct title="test">
+testst
+</st-mobicct>
+</st-mobicbtn>
 </vs-col>
 </vs-row>
 </div>

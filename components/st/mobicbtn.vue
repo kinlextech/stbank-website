@@ -1,16 +1,23 @@
 <template>
   <div>
-    <ul class="hor-list">
-      <li v-for="(tab, index) in nvlist" :key="tab.title">
-        <vs-button square icon transparent @click="selectTab(index)">
-          <i class="bx bxs-phone-call"></i>
-          <p class="mt-1">{{ tab.title }}</p>
-          <template #animate>
-            <i class="bx bxs-like"></i>
+    <header class="ictabs">
+      <ul class="hor-list">
+        <li ref="btnnav" v-for="(it, index) in mobicbtn" :key="index">
+          <template>
+            <vs-button>ddd</vs-button>
+            <!-- <button
+              class="vs-button vs-button--square"
+              @click="selectTab(index)"
+            >
+              <div class="vs-button__content">
+                <i class="bx bxs-phone-call"></i>
+                <p class="mt-1">{{ it.title }}</p>
+              </div>
+            </button> -->
           </template>
-        </vs-button>
-      </li>
-    </ul>
+        </li>
+      </ul>
+    </header>
     <slot></slot>
   </div>
 </template>
@@ -26,22 +33,22 @@ export default {
   data() {
     return {
       selectedIndex: 0, // the index of the selected tab,
-      nvlist: [], // all of the tabs
+      mobicbtn: [], // all of the tabs
     };
   },
   created() {
-    this.nvlist = this.$children;
-    console.log(this.$children);
+    // var parent = this.$refs;
+    this.mobicbtn = this.$parent;
+    console.log();
   },
   mounted() {
     this.selectTab(0);
   },
   methods: {
     selectTab(i) {
-      this.selectedIndex = i;
-      // loop over all the tabs
-      this.nvlist.forEach((btab, index) => {
-        btab.isActive = index === i;
+      this.mobicbtn.forEach((ctab, index) => {
+        // ctab.isActive = ctab.title === selectedTab.title;
+        ctab.isActive = index === i;
       });
     },
   },
@@ -49,6 +56,11 @@ export default {
 </script>
 
 <style lang="scss">
+.st-btn {
+  width: 100%;
+  height: calc(100%);
+  cursor: pointer;
+}
 .hor-list {
   list-style: none;
   padding: 0;

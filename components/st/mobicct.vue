@@ -12,11 +12,15 @@ export default {
       required: true,
       default: "btab",
     },
+    selected: { default: false },
   },
   data() {
     return {
       isActive: false,
     };
+  },
+  mounted() {
+    this.isActive = this.selected;
   },
 };
 </script>
